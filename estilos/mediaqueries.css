@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+@media screen and (min-width:320px) and (max-width:767px){
+
+/* CONFIGURAÇÕES GERAIS */
+.flex{
+    flex-direction: column;
+}
+
+.btn-fixo, .vertical-line{
+    display: none;
+}
+
+.arrow-up i{
+    font-size: 2.2em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* MENU MOBILE */
+.btn-abrir-menu {
+    display: block;
+    color: white;
+}
+
+.btn-abrir-menu i {
+    font-size: 52px;
+    padding-right: 15px;
+}
+
+.menu-mobile .btn-fechar i{
+    font-size: 42px;
+}
+
+/* CABEÇALHO */
+header{
+    position: fixed;
+    padding-bottom: 25px;
+}
+.menu-desktop, .btn-contato{
+    display: none;
+}
+
+nav ul li a::after{
+    content: "";
+    position: relative;
+}
+
+/* TOPO-DO-SITE */
+section#topo-do-site{
+    height: 100vh;
+    padding-top: 27%;
+}
+
+.txt-animado{
+    margin-top: 50px;
+}
+
+.txt-animado h1{
+    line-height: normal;
+    font-size: 3em;
+}
+
+.txt-animado span{
+    font-size: 3.3em;
+    padding-bottom: 20px;
+}
+
+.txt-animado .btn-topo-do-site button {
+    width: 130px;
+    height: 90px;
+    margin-right: 15px;
+    font-size: 2.2em;
+    margin-top: 40px;
+}
+
+.txt-animado span::after{
+    content: "";
+    height: 65%;
+}
+/* SOBRE MIM*/
+section#sobre img{
+    width: 350px;
+}
+
+/* PROJETOS */
+section#projetos{
+    padding-top: 20%;
+}
+
+section#projetos .projetos-box {
+    flex-direction: column; 
+}
+
+section#projetos .projetos-box .txt-projetos-box {
+    width: 100%; 
+    padding: 25px; 
+}
+
+section#projetos .projetos-box .txt-projetos-box p{
+    font-size: 1.3em;
+}
+
+.projetos-box .txt-projetos-box button{
+    margin-top: 60px;
+}
+
+section#projetos .projetos-box img {
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+/* RODAPÉ */
+footer{
+    padding-right: 3%;
+    margin-top: 11%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex{
+        flex-direction: column;
+    }
+    
+    .btn-fixo, .vertical-line{
+        display: none;
+    }
+    
+    /* MENU MOBILE */
+    .btn-abrir-menu {
+        display: block;
+        color: white;
+    }
+    
+    .btn-abrir-menu i {
+        font-size: 70px;
+        margin-left: 20px;
+        padding-right: 15px;
+    }
+
+    .menu-mobile nav ul li a {
+        font-size: 2.1em;
+    }
+
+    .menu-mobile .btn-fechar i{
+        font-size: 3em;
+    }
+    
+    /* CABEÇALHO */
+    header{
+        position: fixed;
+        margin-bottom: 25px;
+    }
+
+    .logo img{
+        width: 180px;
+        margin-left: 15px;
+    }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    
+    nav ul li a::after{
+        content: "";
+        position: relative;
+    }
+    
+    /* TOPO-DO-SITE */
+    section#topo-do-site{
+        padding-top: 30%;
+    }
+    
+    .txt-animado{
+        margin-top: 50px;
+    }
+    
+    .txt-animado h1{
+        line-height: normal;
+        font-size: 4.8em;
+    }
+    
+    .txt-animado span{
+        font-size: 3.5em;
+        padding-bottom: 20px;
+    }
+
+    .txt-animado .btn-topo-do-site button{
+        width: 190px;
+        height: 110px;
+        margin-right: 15px;
+        transition: .3s;
+        color: aqua;
+        font-size: 2.5em;
+        border: 4px solid aqua;
+        margin-top: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn-topo-do-site button:hover{
+        box-shadow: 6px 6px 2px aqua;
+    }
+    
+    /* SOBRE MIM*/
+    section#sobre{
+        padding-top: 14%;
+    }
+
+    section#sobre img{
+        width: 430px;
+    }
+
+    section#sobre .txt-sobre h1 {
+        font-size: 3.8em;
+    }
+
+    section#sobre .txt-sobre p{
+        font-size: 2em;
+        line-height: 38px;
+    }
+    
+    
+    /* PROJETOS */
+    section#projetos{
+        padding-top: 20%;
+    }
+    
+    section#projetos .projetos-box {
+        flex-direction: column; 
+    }
+    
+    section#projetos .projetos-box .txt-projetos-box {
+        width: 100%; 
+        padding: 25px; 
+    }
+    
+    section#projetos .projetos-box .txt-projetos-box p{
+        font-size: 1.3em;
+    }
+
+    section#projetos h1{
+        font-size: 3.8em;
+    }
+    
+    .projetos-box .txt-projetos-box button{
+        margin-top: 60px;
+        width: 170px;
+        height: 90px;
+        box-shadow: 4px 4px 2px white;
+    }
+
+    .projetos-box .txt-projetos-box button i{
+        font-size: 3.8em;
+    }
+    
+    section#projetos .projetos-box img {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+    
+    /* RODAPÉ */
+    footer{
+        padding-right: 5%;
+    }
+
+    footer h3{
+        font-size: 2.2em;
+    }
+
+    .btn-social-fixo i{
+        font-size: 2.1em;
+    }
+}
